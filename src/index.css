@@ -1,13 +1,48 @@
+@tailwind base;
+@tailwind components;
+
+.navlinks{
+  @apply cursor-pointer hover:bg-yellow-200 hover:text-black px-2 pt-4 transition ease-in-out duration-300 xl:text-lg
+}
+.btn {
+  @apply bg-red-900 rounded-full h-10 w-24 text-xs lg:h-14 lg:w-48 md:h-14 md:w-36 sm:h-12 sm:w-28 sm:text-sm md:text-base text-white font-semibold lg:text-lg  hover:bg-red-600 active:bg-red-700 hover:border-[2px] duration-150 ;
+}
+.logRegBox{
+  @apply border-[4px] border-red-900 px-24 py-10 h-[33rem] w-[25rem] rounded-tr-[3rem] rounded-bl-[3rem] bg-[#FFEDDC] shadow-2xl
+}
+.signIn{
+  @apply font-bold text-red-900 underline underline-offset-2 cursor-pointer hover:text-white  md:text-base lg:text-lg text-sm
+}
+.logReg{
+  @apply bg-red-900 rounded-full h-10 w-32 text-white font-bold mt-8 mx-10 hover:bg-orange-600 active:bg-red-700 hover:border-[2px] hover:border-red-900 
+}
+.close{
+  @apply bg-red-900 w-10 h-10 text-white font-bold rounded-full hover:bg-yellow-400 hover:text-black active:bg-yellow-500
+}
+/* sidebar components in both dashboards */
+.manLi{
+  @apply flex space-x-8 md:text-lg text-base items-center font-semibold hover:bg-red-800 rounded-xl duration-75 cursor-pointer
+}
+.dept{
+  @apply bg-[#D41E00] lg:h-32 md:h-28 sm:h-16 h-14 w-60 lg:w-48 md:w-32 sm:w-80 text-white flex justify-center items-center hover:bg-[#F5631A] hover:rounded-3xl cursor-pointer duration-200 font-bold active:bg-[#BA0F30]
+}
+.deptOptions{
+  @apply font-bold lg:h-32 md:h-28 sm:h-16 h-14 sm:w-80 flex sm:items-center sm:justify-center md:text-xl text-lg  lg:text-2xl
+}
+
+
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
